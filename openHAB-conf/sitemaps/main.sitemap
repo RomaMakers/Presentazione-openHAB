@@ -1,0 +1,6 @@
+sitemap main label="FABLAB" {
+  Frame label="Sala Corsi" {
+  Switch item=Lampada label="Lampada Tavolo" icon="light"
+  Text   item=PIR     label="Presenza Tavolo [%d]"
+}
+}

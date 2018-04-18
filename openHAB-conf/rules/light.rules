@@ -1,0 +1,15 @@
+import org.openhab.model.script.actions.Timer
+
+var Timer 
+
+rule "Luce ON"
+when
+  Item PIR changed from OFF to ON
+then
+  Lampada.sendCommand(ON)
+
+  timer = createTimer(now.plusSeconds(6)) [|
+        Lampada.sendCommand(OFF)
+        ]
+
+end

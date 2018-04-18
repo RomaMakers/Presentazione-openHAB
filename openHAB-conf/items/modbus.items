@@ -1,0 +1,6 @@
+Switch Lampada "Luce Tavolo" {modbus="slave1:<0:>0"}
+
+
+Switch PIR "PIR Fablab" {modbus="slave1:<1:>1"}
+
+
